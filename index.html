@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="./image-netflix/1.png" class="logo">
+            <button class="language-btn">English <img src="./image-netflix/icon.png"></button>
+            <button><a href="signup.html"> Sign In</a></button>
+        </nav>
+        <div class="header-content">
+            <h1>Unlimited movies, TV Shows and more,</h1>
+            <h3>Watch anyWhere, Cancel anytime.</h3>
+            <p>Ready to Watch? Enter your email to create or restart your membership.</p>
+            <form class="email-signup">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Get Started</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2 style="color: black;">Enjoy on your TV.</h2>
+                <p style="color: black;">Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV , Blu-ray
+                    players and more.
+                </p>
+            </div>
+            <div class="img-col">
+                <img src="./image-netflix/feature.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="row">
+            <div class="img-col">
+                <img src="./image-netflix/3.jpg">
+            </div>
+            <div class="text-col">
+                <h2 style="color: black;">Download your Shows to Watch offline.</h2>
+                <p style="color: black;">Save on favourite easily and always have Something to Watch.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2 style="color: black;">Watch AnyWhere.</h2>
+                <p style="color: black;">Stream Unlimited movies and TV Shows on your phone, tablet, laptop
+                    and TV.</p>
+            </div>
+            <div class="img-col">
+                <img src="./image-netflix/feature2.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="features">
+        <div class="row">
+            <div class="img-col">
+                <img src="./image-netflix/children.jpg">
+            </div>
+            <div class="text-col">
+                <h2 style="color: black;">Create profiles for children.</h2>
+                <p style="color: black;">send children an adventure with their favourite characters in a
+                    space made just for them-free with your membership.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="faq" style="color: black;">
+        <h2>Frequently Asked Question</h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What is NetFlix?</label>
+                <div class="content">
+                    <P>Netflix is an American subscription video on-demand over-the-top streaming service
+                        owned and operated by Netflix, Inc. The service primarily distributes films
+                        and television series
+                        produced by the media company of the same name from various genres,
+                        and it is available internationally in multiple languages</P>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">How much does NetFlix cost?</label>
+                <div class="content">
+                    <P>Netflix is an subscription Rs 299 used in phone, laptop and desktop</P>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Where can I Watch?</label>
+                <div class="content">
+                    <P>Netflix is an any time any where Watch
+                        is available internationally in multiple languages</P>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">How do I cancel?</label>
+                <div class="content">
+                    <P>Netflix is an American subscription video on-demand over-the-top streaming service
+                        owned and operated by Netflix, Inc. The service primarily distributes films
+                        and television series
+                        produced by the media company of the same name from various genres,
+                        and it is available internationally in multiple languages</P>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="fifth">
+                <label for="fifth">What can I watch on NetFlix?</label>
+                <div class="content">
+                    <P>Netflix is an American subscription video on-demand over-the-top streaming service
+                        owned and operated by Netflix, Inc. The service primarily distributes films
+                        and television series
+                        produced by the media company of the same name from various genres,
+                        and it is available internationally in multiple languages</P>
+                </div>
+            </li>
+
+            <li>
+                <input type="radio" name="accordion" id="sixth">
+                <label for="sixth">Is NetFlix good for Kids?</label>
+                <div class="content">
+                    <P>Netflix is an kids not harmful and cartoon, cartoon movie and
+                        cartoon anime any other things is available
+                        it is available internationally in multiple languages</P>
+                </div>
+            </li>
+        </ul>
+
+        <small style="color: red;">Ready to Watch? Enter your email to create or restart your membership</small>
+        <!-- <form class="email-signup">
+            <input type="email" placeholder="Email address" required>
+            <input type="password" placeholder="password" required>
+            <button type="submit">Get Started</button>
+
+        </form> -->
+        <form>
+            <div class="email-signup">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Write your email" />
+            </div>
+            <!-- passWord -->
+            <div class="pass">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="password" />
+            </div>
+            <!-- Sign Up button -->
+            <button id="submit-btn" onclick="signUp()">Sign Up</button>
+
+    </div>
+    </div>
+    </div>
+    </form>
+
+    <div class="footer">
+        <h2 style="color: rgb(230, 27, 27);">Question call 9920540664 & 9967587882</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+
+            </div>
+            <div class="col">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookies Preference</a>
+                <a href="#">Legal Notices</a>
+
+            </div>
+            <div class="col">
+                <a href="#">Account</a>
+                <a href="#">Ways to watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on NetFlix</a>
+
+            </div>
+            <div class="col">
+                <a href="#">Media Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy second</a>
+                <a href="#">Contact us</a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <button class="language-btn">English <img src="./image-netflix/icon.png"></button>
+    <p class="copyright-txt" style="color: black;">NetFlix India</p>
+
+</body>
+
+</html>
